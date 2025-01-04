@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Love Letter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <style>
+    body { 
+      text-align: center; 
+      font-family: 'Poppins', sans-serif;
+      background-image: url('wallpaper.jpg'); /* Replace with your image file */
+      background-size: cover; 
+      background-position: center; 
+      background-attachment: fixed; 
+      color: white; 
+      padding: 20px; 
+      margin: 0; 
+    }
+    h1 { 
+      color: #0026ff; 
+      font-family: 'Dancing Script', cursive; 
+      font-size: 3em;
+    }
+    #letter { 
+      margin: 20px auto; 
+      padding: 20px; 
+      background-color: #fff; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+      max-width: 500px; 
+      font-size: 18px; 
+      text-align: left; 
+      color: #333; 
+    }
+    a {
+      color: #ff6f61; 
+      text-decoration: none; 
+      font-weight: bold;
+      margin-top: 30px;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #ff6f61;
+      border-radius: 5px;
+    }
+    a:hover {
+      color: #ff41a1;
+      background-color: #ff6f61;
+      border-color: #ff41a1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Your Daily Love Letter</h1>
+
+  <div id="letter">
+    <!-- The love letter for the day will be inserted here -->
+    Loading your love letter...
+  </div>
+
+  <a href="main.html">Back to your birthday letter</a>
+
+  <script>
+    // Object to store daily love letters
+    const dailyLetters = {
+      Sunday: `
+        <p>Dear Haddassah,</p>
+        <p>I was thinking about it and I think I'd actually want to go church with ou and the kids on Sundays you know. Thinking back, there were a lot of great wholesome moments
+            that came from my whole family going to church as one. We'd sit in the living room, eat food as we ket the wind enter the house on a hot Sunday afternoon and talk about the sevice
+            of the day. I want that baba. And I want that with you &#128106. (I hate that my eyes get teary every time I write about us and our future )</p>
+        <p>Love always,</p>
+        <p>Your Future Husband<br>Angelo Goliath</p>
+      `,
+      Monday: `
+        <p>Dear Haddassah,</p>
+        <p>Give me a H<br>
+           Give me a A<br>
+           Give me a D<br>
+           Give me a A<br>
+           Give me a S<br>
+           Give me a another S<br>
+           Give me a A<br>
+           Give me a H<br>
+           LETS GO HADASSAH, LETS GO HADASSAH<br>
+           SHE GOT THAT FIRE, AND SHE GON USE IT<br>
+           SHE GOT SASS, AND SHE GON USE IT<br>
+           BECAUSE HER NAME IS HADASSAH<br>
+           <br> here to remind you I'm your biggest cheerleader my princess.  Hope you have a kickass week 
+            </p>
+        <p>With love,</p>
+        <p>Your Biggest Cheerleader<br>Angelo Goliath</p>
+      `,
+      Tuesday: `
+        <p>Dear Haddassah,</p>
+        <p>This year I want to be best boyfriend to the best woman in the world. I don't know if it's concerning or not but you make want to be good man
+            and husband, even in the traditional sense. Like a leader and protector, you bring out masculinity in me. I don't mind tho
+            as long as I can keep making you happy and feel loved and special, that's all I want to do</p>
+        <p>Forever yours,</p>
+        <p>Your Stinka Bud<br>Angelo Goliath</p>
+      `,
+      Wednesday: `
+        <p>Dear Haddassah,</p>
+        <p>This is honestly my least favorite day of the week. Cuz it's not thursday which means Friday as still very far<br>
+            Even on my least favorite day the thought of being your man is more than enough to make my day. Because that's what you do:
+            you not only make my day but having makes the sunshine brighter, the smell of flowers better, even music sounds more better.
+            <br>You light up everything you touch bae</p>
+        <p>With all my love,</p>
+        <p>Your Other Half<br>Angelo Goliath</p>
+      `,
+      Thursday: `
+        <p>Dear Haddassah,</p>
+        <p>Oh yes It's almost Friday. I don't have much to say today but know that I love, I think you're drop dead gorgeous. Oh my God you're so gorgeous babe
+            Like, damn. You're my girlfriend babe. Muchununununununu. I wouldn't change one thing about you (maybe your stubborness), cuz from your head to your toe your fine bae
+            <br> And I hope aren't thinking I'm saying this cuz I'm your boyfrined.
+            <br> Because regardless of what I am you, my eyes will always see and angel</p>
+        <p>Yours always,</p>
+        <p>Your Sweet Sweet Sweet Stinka Bug<br>Angelo Goliath</p>
+      `,
+      Friday: `
+        <p>Dear Haddassah,</p>
+        <p>It's Finally Friday<br>This day always make me think back to that Friday night I met the love of my life. It was chaai once she said I'm attractive. We knew we had to get each other
+            <br>But only you had the confidence to make the first moves. Luckily I showed you my cool dance moves that amazed you so much &#128526.
+            Till today I still fall in love with you every day. And will continure to fall in love with you everyday. Once we locked i, ain't know switching out.</p>
+        <p>Love always,</p>
+        <p>Your Stinka bug For Life<br>Angelo Goliath</p>
+      `,
+      Saturday: `
+        <p>Dear Haddassah,</p>
+        <p>Ahhh Saturdays.<br> Usually we'd groove on Fridays but every so now and then we'd go on Saturday as well. This is probably isn't a good think to admit but I loved how 
+            people would be amazed by us on the dance floor and in public. It's like we're telling them "Yeah this type of love exist. Be patient for it, it will come"<br>
+            To many more nights out my princess &#128526</p>
+        <p>With all my love,</p>
+        <p>Your Stinka Bud<br>Angelo Goliath</p>
+      `
+    };
+
+    // Get the current day of the week
+    const today = new Date().toLocaleString("en-US", { weekday: "long" });
+
+    // Display the corresponding love letter for the day
+    const letterDiv = document.getElementById("letter");
+    letterDiv.innerHTML = dailyLetters[today];
+  </script>
+</body>
+</html>
