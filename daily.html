@@ -45,8 +45,13 @@
     }
     a:hover {
       color: #ff41a1;
-      background-color: #ff6f61;
+      background-color: #0004ff;
       border-color: #ff41a1;
+    }
+    audio {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
     }
   </style>
 </head>
@@ -58,33 +63,92 @@
     Loading your love letter...
   </div>
 
-  <a href="index.html">Back to your birthday letter</a>
+  <!-- Audio player below the daily letter -->
+  <audio id="daily_audio" controls>
+    <source id="audio_source" src="" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <a href="main.html">Back to your birthday letter</a>
 
   <script>
+
     // Object to store daily love letters
     const dailyLetters = {
       Sunday: `
-        <p>Oops! Looks like like there's no more letters for you. Contact your loving, handsome, charming, Italian Stallion boyfriend for any information and check back soon!</p>
+        <p>Dear Hadassah, Spiritual Warrior</p>
+        <p>Verse of the day, Romans 15:13: "May the God of hope fill you with all joy and peace as you trust in Him". Hope baba, Hope. We can't live without it.
+          Hope in God, Hope in a better future is was drives us to wake up every morning. I mean God sent his only son to Earth to be sacrificed to save us. In the hopes that we humans, 
+          his children will to what lengths he's willing to go far us. I have hope in you baba. And I have hope in us. I hope you had a blessed Sunday</p>
+        <p>Love always,</p>
+        <p>Yo man, Yo man, Yo mans<br>Angelo Goliath</p>
       `,
       Monday: `
-        <p>Oops! Looks like like there's no more letters for you. Contact your loving, handsome, charming, Italian Stallion boyfriend for any information and check back soon!</p>
+        <p>Dear Hadassah, Miss Independant </p>
+        <p>If you think I'm grumpy in the morning you should see me on a Monday morning. These are the mornings I contemplate whether school or this job is worth it. But I eeventually get up. 
+          Cuz that's what adults do, Yay. Anyway baba Happy Birhtday!!! I know your birthday is over but ion care it's your birthday and today is all about you. I love you my princess. And I'll 
+          always always love you</p>
+        <p>With love,</p>
+        <p>Your Loving boyfrined<br>Angelo Goliath</p>
       `,
       Tuesday: `
-        <p>Oops! Looks like like there's no more letters for you. Contact your loving, handsome, charming, Italian Stallion boyfriend for any information and check back soon!</p>
+        <p>Dear Hadassah, My gummy drop,</p>
+        <p>This will serve is the first of your new set of daily letters as a certain someone can't get enough of their boyfriend's sweetness &#128529. <br>
+          I added a lil song below that I hope will bring a pretty smile your pretty face<br><br>
+          Oh my babes I was so worried. And the thing is the worry wasn't coming from place of fear of you doin sumn cuz I have a lotta faith in your resilience and capabalities
+          . I was worried that you felt alone in the funk. That's a big fear I have. It was my savior complex kicking in. But I had to remind myself that you have fif and your mum as well that you can vent or express to
+          if you need someone. I love you baba. And with that love comes a very deep feeling of wanting to shield you from all the pain and suffering in this world. <br>
+          But I know I'd only be doing you a deservice because you also need to learn to be there for yourself, to protect yourself, and to nurture and love yourself to back to your healthier self
+          <br>So think of me as your supporter, a safe haven rather than an a total escape. I love you baba. You are my princess. Take as much time as you need. I'll always be here for you</p>
+        <p>Forever yours,</p>
+        <p>Your Prince Charming<br>Angelo Goliath</p>
       `,
       Wednesday: `
-        <p>Oops! Looks like like there's no more letters for you. Contact your loving, handsome, charming, Italian Stallion boyfriend for any information and check back soon!</p>
+        <p>Dear Hadassah, Princess</p>
+        <p>I bet you loved that lil song yesterday didn't you, hehehe. I don't lnow if I old you but I had a dream we were in our early 40s. There were a bunch of kids running around in the house.
+          Some of the were birthed by you. Most were foster kids. But all of them were our kids. I think we went to the university graduation of the kids. There were so many of us as a family we even got a cuple of looks.
+          But you didn't care one bit. Because changing a kid's life was way more important than public perception of you. I feel like it's more of a premonition than a dream. Because that's what me and my babes are working towards. <br>
+          And I know I lot of people might think I'm crazy for wanting to do these things along with you. But I'm not crazy. You just make... Un Poco Loco</p>
+        <p>With all my love,</p>
+        <p>Your Prince Charming<br>Angelo Goliath</p>
       `,
       Thursday: `
-        <p>Oops! Looks like like there's no more letters for you. Contact your loving, handsome, charming, Italian Stallion boyfriend for any information and check back soon!</p>
+        <p>Dear Hadassah, bun bun</p>
+        <p>You know if I could I'd want to make everyday your birthday. Just imagine it baba, everyday going out or eating out celebrating yo birthday with braai vleis or a nice potjie
+           with a lekka chocolate caramel cake. I prolly sound crazy but I'm just crazy bout the most wonderfull girl in the world. I hope you enjoyed your day baba. Dream about me. <br><br>
+           Here's a song that reminds me of one of my favorite nights on Earth with the most beautiful girl in the world from my favorite character in one of her favorite movies.</p>
+        <p>Yours always,</p>
+        <p>Your Prince Charming<br>Angelo Goliath</p>
       `,
       Friday: `
-        <p>Oops! Looks like like there's no more letters for you. Contact your loving, handsome, charming, Italian Stallion boyfriend for any information and check back soon!</p>
+        <p>Dear Hadassah, My Smile Keeper</p>
+        <p>I don't know why but I have the urge to prank you. I think annoying you mhight be one of my love languages lol. Plus you and fif need to feel my vengeance. I already have a couple of blueprints laid out. 
+          They're a bit scary tho and I'm worried you and fif might get a heart attack. Don't worry there's no snakes (maybe). But there will most likely be ghosts... yes... ghost. MUHAHAHAHA <br><br>
+          Here's one of those song that remind of the times we'd cuddle after making love</p>
+        <p>Love always,</p>
+        <p>Your Very Weird Possibly Neurodivergent Boo<br>Angelo Goliath</p>
       `,
       Saturday: `
-        <p>Oops! Looks like like there's no more letters for you. Contact your loving, handsome, charming, Italian Stallion boyfriend for any information and check back soon!</p>
+        <p>Dear Hadassah, My Baby Mama</p>
+        <p>I saw that thing you reposted where that lady talks about if she's succeeding in one area of her life it means she's sacrificing another part of her life. That resonated with me a lot cuz
+           I'm always concerned about getting my shit together not knowing having yo shit together doesn't look the same way it does in my head. This relationship is one part I'm not sacricing tho cuz I will 
+           see you walk the isle (and not cry) and have yo babies before I leave this Earth</p>
+        <p>With all my love,</p>
+        <p>Your Future Hubby<br>Angelo Goliath</p>
       `
     };
+
+    // Object that'll store daily songs
+    const dailySongs = {
+      Sunday: "hope.mp3",
+      Monday: "rain.mp3",
+      Tuesday: "can.mp3",
+      Wednesday: "Poco.mp3",
+      Thursday: "king.mp3",
+      Friday: "finesse.mp3",
+      Saturday: "endless.mp3",
+      
+    }
 
     // Get the current day of the week
     const today = new Date().toLocaleString("en-US", { weekday: "long" });
@@ -92,6 +156,13 @@
     // Display the corresponding love letter for the day
     const letterDiv = document.getElementById("letter");
     letterDiv.innerHTML = dailyLetters[today];
+
+    // The audio for the song
+    const audioElement = document.getElementById("daily_audio");
+    const audioSource = document.getElementById("audio_source");
+    audioSource.src = dailySongs[today];
+    audioElement.load();
+
   </script>
 </body>
 </html>
